@@ -13,6 +13,8 @@ function showMessage() {
   document.getElementById("reactionButtons").classList.remove("hidden");
 }
 
+}
+
 function respond(choice) {
   const responseBox = document.getElementById("finalResponse");
   responseBox.innerText = `You chose: ${choice}\n\nThis page will close in 5 seconds...`;
@@ -33,3 +35,4 @@ function respond(choice) {
     window.close();
   }, 5000);
 }
+
