@@ -10,7 +10,6 @@ window.addEventListener("load", () => {
 function showMessage() {
   document.getElementById("intro").classList.add("hidden");
   document.getElementById("confession").classList.remove("hidden");
-  document.getElementById("reactionButtons").classList.remove("hidden");
 }
 
 function respond(choice) {
@@ -18,7 +17,6 @@ function respond(choice) {
   responseBox.innerText = `You chose: ${choice}\n\nThis page will close in 5 seconds...`;
   responseBox.classList.remove("hidden");
 
-  // Send to Discord webhook
   fetch("https://discord.com/api/webhooks/1416816308049416256/VemaHBgbcNsaySNIFD83BIpYJ6KpMNNAyfETBEgO5rL71ekLpgL2oQYCD8j36yNYneiw", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -27,7 +25,6 @@ function respond(choice) {
     })
   });
 
-  // Attempt to close tab
   setTimeout(() => {
     window.open('', '_self');
     window.close();
