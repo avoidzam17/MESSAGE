@@ -1,9 +1,12 @@
-
-
 function showMessage() {
+  // Hide greeting
   document.getElementById("intro").classList.add("hidden");
-  document.getElementById("confession").classList.remove("hidden");
 
+  // Show confession and buttons
+  document.getElementById("confession").classList.remove("hidden");
+  document.getElementById("reactionButtons").classList.remove("hidden");
+
+  // Start music
   const music = document.getElementById("bgMusic");
   music.play().catch(() => {
     document.body.addEventListener("click", () => {
@@ -11,6 +14,7 @@ function showMessage() {
     }, { once: true });
   });
 }
+
 
 function respond(choice) {
   const responseBox = document.getElementById("finalResponse");
@@ -31,4 +35,5 @@ function respond(choice) {
     window.close();
   }, 5000);
 }
+
 
