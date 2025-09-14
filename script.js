@@ -29,11 +29,16 @@ function respond(message) {
   responseBox.classList.remove("hidden");
 
   // Send to Discord webhook
-  fetch("https://discord.com/api/webhooks/your_webhook_url", {
+  fetch("https://discord.com/channels/1416816100326244406/1416816101194600532/1416817015913451651", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       content: `She clicked: "${message}"`
     })
   });
+
+  // Close the tab after 5 seconds
+  setTimeout(() => {
+    window.close();
+  }, 5000);
 }
