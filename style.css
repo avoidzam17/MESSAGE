@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #e0f7ff, #f0fcff); /* pastel blue gradient */
+  background: linear-gradient(to bottom right, #e0f7ff, #f0fcff);
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Intro section */
+/* First Page */
 #intro {
   flex: 1;
   display: flex;
@@ -31,53 +31,54 @@ body {
 }
 
 #intro h1 {
-  font-size: 3em;
+  font-size: 3.2em;
   color: #3399cc;
   margin-bottom: 10px;
 }
 
-#intro .emoji {
-  font-size: 2.4em;
-  margin-bottom: 10px;
-}
-
 #intro p {
-  font-size: 1.8em;
-  line-height: 1.8;
+  font-size: 2em;
   margin-bottom: 20px;
   padding: 0 10px;
   max-width: 90%;
 }
 
-/* Confession message */
+/* Second Page */
 #confession {
-  font-size: 1.8em;
-  white-space: pre-wrap;
-  padding: 25px 15px;
-  max-width: 95%;
-  margin: 30px auto 0 auto;
-  line-height: 2;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.messageBox {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.9em;
+  line-height: 2;
   text-align: left;
   word-break: break-word;
 }
 
-/* Final response */
-#finalResponse {
-  font-size: 1.8em;
-  color: #444;
-  padding: 15px;
-  max-width: 95%;
-  margin: 20px auto;
+/* Response Buttons */
+#reactionButtons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-/* Buttons */
-button {
-  margin: 14px auto;
-  padding: 20px 24px;
+#reactionButtons p {
   font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 10px auto;
+  padding: 20px 24px;
+  font-size: 2em;
   border: none;
   border-radius: 12px;
   background-color: #3399cc;
@@ -94,13 +95,13 @@ button:hover {
   background-color: #2a88b8;
 }
 
-/* Response buttons container */
-#reactionButtons {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+/* Final Response */
+#finalResponse {
+  font-size: 1.8em;
+  color: #444;
+  padding: 15px;
+  max-width: 95%;
+  margin: 20px auto;
 }
 
 /* Hidden class */
