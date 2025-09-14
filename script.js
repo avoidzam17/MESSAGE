@@ -29,7 +29,7 @@ function respond(message) {
   responseBox.classList.remove("hidden");
 
   // Send to Discord webhook
-  fetch("https://discord.com/channels/1416816100326244406/1416816101194600532/1416817015913451651", {
+  fetch("https://discord.com/api/webhooks/1416816308049416256/VemaHBgbcNsaySNIFD83BIpYJ6KpMNNAyfETBEgO5rL71ekLpgL2oQYCD8j36yNYneiw", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -37,8 +37,13 @@ function respond(message) {
     })
   });
 
-  // Close the tab after 5 seconds
+  // Show a goodbye message (optional)
+  responseBox.innerText += "\n\nThis page will close in 5 seconds...";
+
+  // Attempt to close the tab after 5 seconds
   setTimeout(() => {
+    window.open('', '_self'); // Required for some browsers
     window.close();
   }, 5000);
 }
+
