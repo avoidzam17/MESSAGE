@@ -8,10 +8,12 @@
 <body>
 
   <div id="intro">
-    <h1>Para Sa'yo 💌</h1>
-    <p>Hi Beulah, I made this for you. When you're ready, press the button below.</p>
-    <button onclick="showMessage()">Read my message</button>
-  </div>
+  <h1>A MESSAGE FOR YOU!!</h1>
+  <div class="emoji">📩</div>
+  <p>Hi Beulah, I made this for you.<br>When you're ready, press the button below.</p>
+  <button onclick="showMessage()">Read my message</button>
+</div>
+
 
   <div id="confession" class="hidden">
     <p>
@@ -22,12 +24,13 @@
     </p>
   </div>
 
-  <div id="reactionButtons" class="hidden">
-    <p>How do you feel?</p>
-    <button onclick="respond('You can reach me on my socmeds')">💖 I'm interested</button>
-    <button onclick="respond('Take all the time you need. I’ll be here when you\'re ready')">🕊️ I need time</button>
-    <button onclick="respond('Thank you for opening this. Ingat ka palagi 💙')">🚪 I'm not ready</button>
-  </div>
+<div id="reactionButtons" class="hidden">
+  <p>How do you feel?</p>
+  <button onclick="respond('💕 I\'m interested')">💕 I'm interested</button>
+  <button onclick="respond('🕊️ I need time')">🕊️ I need time</button>
+  <button onclick="respond('🚫 I\'m not ready')">🚫 I'm not ready</button>
+</div>
+
 
   <div id="finalResponse" class="hidden"></div>
 
@@ -39,5 +42,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
