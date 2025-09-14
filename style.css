@@ -9,9 +9,12 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom right, #ffe6f0, #f0f8ff);
   color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   text-align: center;
   padding: 20px;
-  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -21,12 +24,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 10px;
+  max-width: 95%;
   width: 100%;
 }
 
 #intro h1 {
-  font-size: 2.8em; /* Slightly larger than screenshot */
+  font-size: 2.8em;
   color: #d6336c;
   margin-bottom: 10px;
   text-align: center;
@@ -34,7 +37,7 @@ body {
 }
 
 #intro p {
-  font-size: 1.8em; /* Matches visual scale from screenshot */
+  font-size: 1.8em;
   line-height: 1.8;
   margin-bottom: 20px;
   padding: 0 10px;
@@ -80,7 +83,7 @@ button:hover {
   font-size: 1.8em;
   margin-top: 30px;
   white-space: pre-wrap;
-  padding: 25px;
+  padding: 25px 15px;
   max-width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -88,6 +91,8 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  word-break: break-word;
 }
 
 /* Final response */
