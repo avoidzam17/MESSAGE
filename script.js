@@ -1,0 +1,39 @@
+function showMessage() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("confession").classList.remove("hidden");
+  document.getElementById("reactionButtons").classList.remove("hidden");
+}
+
+
+function respond(message) {
+  const responseBox = document.getElementById("finalResponse");
+  responseBox.innerText = message;
+  responseBox.classList.remove("hidden");
+}
+
+
+window.addEventListener("load", () => {
+  const music = document.getElementById("bgMusic");
+  music.play().catch(() => {
+    // Some browsers block autoplay until user interacts
+    document.body.addEventListener("click", () => {
+      music.play();
+    }, { once: true });
+  });
+});
+
+//notifies me with her answer
+function respond(message) {
+  const responseBox = document.getElementById("finalResponse");
+  responseBox.innerText = message;
+  responseBox.classList.remove("hidden");
+
+  // Send to Discord webhook
+  fetch("https://discord.com/api/webhooks/your_webhook_url", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      content: `She clicked: "${message}"`
+    })
+  });
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Sa'yo 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="intro">
+    <h1>Para Sa'yo 💌</h1>
+    <p>Hi Beulah, I made this for you. When you're ready, press the button below.</p>
+    <button onclick="showMessage()">Read My Message</button>
+  </div>
+
+  <div id="confession" class="hidden">
+    <p>
+      I know you’re probably not expecting a message like this from me, especially since wala tayong interactions aside sa “happy birthday” HAHAHAHA.<br><br>
+      To be direct and honest, my interest in you has grown over the past few days. At first, I was in denial akala ko gutom lang 'to e, totoo pala and as time went on, it only grew bigger. Maybe I'll share the full story sometime if you’re open to it, it's a bit long, but it might help explain how it all started.<br><br>
+      I’m saying this because I’ve been carrying it for a while, and I feel like it’s been holding me back. I’m not expecting anything in return, but if you’re open to getting to know each other, I’d be really grateful for that opportunity.  <br><br>
+      That’s all I wanted to say for now. Don’t worry, take all the time you need to respond. I just hope this message doesn’t make you feel pressured in any way.
+    </p>
+  </div>
+
+  <div id="reactionButtons" class="hidden">
+    <p>How do you feel?</p>
+    <button onclick="respond('You can reach me on my socmeds')">💖 I'm interested</button>
+    <button onclick="respond('Take all the time you need. I’ll be here when you\'re ready')">🕊️ I need time</button>
+    <button onclick="respond('Thank you for opening this. Ingat ka palagi 💙')">🚪 I'm not ready</button>
+  </div>
+
+  <div id="finalResponse" class="hidden"></div>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="i_wanna_be_yours.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
