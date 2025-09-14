@@ -25,10 +25,10 @@ function respond(message) {
 
   responseBox.innerText += "\n\nThis page will close in 5 seconds...";
 
-  setTimeout(() => {
-    window.open('', '_self');
-    window.close();
-  }, 5000);
+setTimeout(() => {
+  document.body.innerHTML = "<h1 style='font-size:2.5em; text-align:center;'>Thank you for reading 💙</h1>";
+}, 5000);
+
 }
 
 window.addEventListener("load", () => {
@@ -39,3 +39,4 @@ window.addEventListener("load", () => {
     }, { once: true });
   });
 });
+
