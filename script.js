@@ -47,3 +47,6 @@ function respond(message) {
   }, 5000);
 }
 
+
+
+//https://discord.com/api/webhooks/1416816308049416256/VemaHBgbcNsaySNIFD83BIpYJ6KpMNNAyfETBEgO5rL71ekLpgL2oQYCD8j36yNYneiw
