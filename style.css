@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* First Page */
 #intro {
   flex: 1;
   display: flex;
@@ -48,7 +46,6 @@ body {
   max-width: 90%;
 }
 
-/* Second Page */
 #confession {
   width: 100%;
   max-width: 800px;
@@ -66,7 +63,6 @@ body {
   word-break: break-word;
 }
 
-/* Response Buttons */
 #reactionButtons {
   margin-top: 30px;
   display: flex;
@@ -100,7 +96,6 @@ button:hover {
   background-color: #2a88b8;
 }
 
-/* Final Response */
 #finalResponse {
   font-size: 1.8em;
   color: #444;
@@ -109,12 +104,10 @@ button:hover {
   margin: 20px auto;
 }
 
-/* Hidden class */
 .hidden {
   display: none;
 }
 
-/* Audio player */
 audio {
   display: none;
 }
