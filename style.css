@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #ffe6f0, #f0f8ff);
+  background: linear-gradient(to bottom right, #e0f7ff, #f0fcff); /* pastel blue gradient */
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -32,7 +32,7 @@ body {
 
 #intro h1 {
   font-size: 3em;
-  color: #d6336c;
+  color: #3399cc; /* pastel blue heading */
   margin-bottom: 10px;
 }
 
@@ -57,7 +57,7 @@ body {
   max-width: 95%;
   margin: 30px auto 0 auto;
   line-height: 2;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -80,7 +80,7 @@ button {
   font-size: 1.8em;
   border: none;
   border-radius: 12px;
-  background-color: #d6336c;
+  background-color: #3399cc; /* pastel blue button */
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -91,7 +91,7 @@ button {
 }
 
 button:hover {
-  background-color: #b02552;
+  background-color: #2a88b8; /* slightly darker on hover */
 }
 
 /* Response buttons container */
