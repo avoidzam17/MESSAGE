@@ -1,3 +1,5 @@
+
+
 window.addEventListener("load", () => {
   const music = document.getElementById("bgMusic");
   music.play().catch(() => {
@@ -26,7 +28,7 @@ function respond(choice) {
   });
 
   setTimeout(() => {
-    window.open('', '_self');
-    window.close();
+    window.open('', '_self'); // Required to allow closing
+    window.close();           // Will only work if tab was opened via JS
   }, 5000);
 }
