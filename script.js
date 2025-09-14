@@ -1,17 +1,15 @@
 
 
-window.addEventListener("load", () => {
+function showMessage() {
+  document.getElementById("intro").classList.add("hidden");
+  document.getElementById("confession").classList.remove("hidden");
+
   const music = document.getElementById("bgMusic");
   music.play().catch(() => {
     document.body.addEventListener("click", () => {
       music.play();
     }, { once: true });
   });
-});
-
-function showMessage() {
-  document.getElementById("intro").classList.add("hidden");
-  document.getElementById("confession").classList.remove("hidden");
 }
 
 function respond(choice) {
@@ -28,7 +26,7 @@ function respond(choice) {
   });
 
   setTimeout(() => {
-    window.open('', '_self'); // Required to allow closing
-    window.close();           // Will only work if tab was opened via JS
+    window.open('', '_self');
+    window.close();
   }, 5000);
 }
