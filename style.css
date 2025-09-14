@@ -76,7 +76,7 @@ button:hover {
 }
 
 #confession {
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin-top: 30px;
   white-space: pre-wrap;
   padding: 20px;
@@ -134,3 +134,4 @@ audio {
   margin-left: auto;
   margin-right: auto;
 }
+
