@@ -15,6 +15,7 @@ function respond(message) {
   responseBox.innerText = message;
   responseBox.classList.remove("hidden");
 
+  // Send to Discord webhook
   fetch("https://discord.com/api/webhooks/1416816308049416256/VemaHBgbcNsaySNIFD83BIpYJ6KpMNNAyfETBEgO5rL71ekLpgL2oQYCD8j36yNYneiw", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -23,12 +24,18 @@ function respond(message) {
     })
   });
 
+  // Show closing message
   responseBox.innerText += "\n\nThis page will close in 5 seconds...";
 
-setTimeout(() => {
-  document.body.innerHTML = "<h1 style='font-size:2.5em; text-align:center;'>Thank you for reading 💙</h1>";
-}, 5000);
-
+  // Graceful fallback for mobile: replace page content
+  setTimeout(() => {
+    document.body.innerHTML = `
+      <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;text-align:center;padding:20px;">
+        <h1 style="font-size:2.5em;color:#3399cc;">Thank you for reading 💙</h1>
+        <p style="font-size:1.5em;">You can close this tab now.</p>
+      </div>
+    `;
+  }, 5000);
 }
 
 window.addEventListener("load", () => {
@@ -39,4 +46,3 @@ window.addEventListener("load", () => {
     }, { once: true });
   });
 });
-
