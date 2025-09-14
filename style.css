@@ -75,16 +75,20 @@ button:hover {
   display: none;
 }
 
-/* Confession message */
 #confession {
-  font-size: 1.1em;
-  margin-top: 20px;
+  font-size: 1.5em;
+  margin-top: 30px;
   white-space: pre-wrap;
-  padding: 10px;
+  padding: 20px;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.8;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Final response */
 #finalResponse {
