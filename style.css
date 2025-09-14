@@ -1,19 +1,59 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom right, #ffe6f0, #f0f8ff);
   color: #333;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-size: 2.5em;
+/* Intro section */
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+#intro h1 {
+  font-size: 2em;
   color: #d6336c;
+  margin-bottom: 10px;
+  text-align: center;
+  word-wrap: break-word;
 }
 
+#intro p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* Paragraphs and messages */
+p {
+  font-size: 1em;
+  margin: 10px 0;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+/* Buttons */
 button {
-  margin: 15px;
-  padding: 12px 24px;
+  margin: 10px auto;
+  padding: 14px 24px;
   font-size: 1em;
   border: none;
   border-radius: 8px;
@@ -21,24 +61,72 @@ button {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 90%;
+  max-width: 320px;
+  display: block;
 }
 
 button:hover {
   background-color: #b02552;
 }
 
+/* Hidden class */
 .hidden {
   display: none;
 }
 
+/* Confession message */
 #confession {
-  font-size: 1.2em;
-  margin-top: 30px;
+  font-size: 1.1em;
+  margin-top: 20px;
   white-space: pre-wrap;
+  padding: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Final response */
 #finalResponse {
   margin-top: 20px;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #444;
+  padding: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Discord link section */
+#discordLink {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+#discordLink button {
+  background-color: #5865F2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 90%;
+  max-width: 320px;
+  display: block;
+  margin: 10px auto;
+}
+
+#discordLink button:hover {
+  background-color: #4752c4;
+}
+
+/* Audio player */
+audio {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
