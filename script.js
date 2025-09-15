@@ -8,26 +8,44 @@ function showMessage() {
       music.play();
     }, { once: true });
   });
-}
 
-function respond(message) {
-  const responseBox = document.getElementById("finalResponse");
-  responseBox.innerText = message;
-  responseBox.classList.remove("hidden");
-
-  // Send to Discord webhook
   fetch("https://discord.com/api/webhooks/1416816308049416256/VemaHBgbcNsaySNIFD83BIpYJ6KpMNNAyfETBEgO5rL71ekLpgL2oQYCD8j36yNYneiw", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      content: `She clicked: "${message}"`
+      content: "She clicked: Read my message"
+    })
+  });
+}
+
+function sendNote() {
+  const note = document.getElementById("userNote").value.trim();
+  if (!note) return;
+
+  fetch("https://discord.com/api/webhooks/1416816308049416256/VemaHBgbcNsaySNIFD83BIpYJ6KpMNNAyfETBEgO5rL71ekLpgL2oQYCD8j36yNYneiw", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      content: `She sent a message: "${note}"`
+    })
+  });
+}
+
+function respond(buttonLabel, displayMessage) {
+  const responseBox = document.getElementById("finalResponse");
+  responseBox.innerText = displayMessage;
+  responseBox.classList.remove("hidden");
+
+  fetch("https://discord.com/api/webhooks/1416816308049416256/VemaHBgbcNsaySNIFD83BIpYJ6KpMNNAyfETBEgO5rL71ekLpgL2oQYCD8j36yNYneiw", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      content: `She clicked: "${buttonLabel}"`
     })
   });
 
-  // Show closing message
   responseBox.innerText += "\n\nThis page will close in 5 seconds...";
 
-  // Graceful fallback for mobile: replace page content
   setTimeout(() => {
     document.body.innerHTML = `
       <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;text-align:center;padding:20px;">
