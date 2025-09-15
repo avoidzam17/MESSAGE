@@ -9,13 +9,13 @@
 
   <!-- First Page -->
   <div id="intro">
-    <h1>A MESSAGE FOR YOU!! 💌</h1>
+    <h1>A MESSAGE FOR YOU!! </h1>
     <div class="emoji">📩</div>
     <p>Hi Beulah, I made this for you.<br>When you're ready, press the button below.</p>
     <button onclick="showMessage()">Read my message</button>
   </div>
 
-  <!-- Second Page -->
+  <!-- Confession Page -->
   <div id="confession" class="hidden">
     <div class="messageBox">
       <p>
@@ -26,11 +26,20 @@
       </p>
     </div>
 
+    <!-- Optional Message Box -->
+    <div id="optionalMessage">
+      <p>Before you respond, you can type something if you want:</p>
+      <textarea id="userNote" rows="4" placeholder="Type here..."></textarea>
+      <br>
+      <button onclick="sendNote()">Send</button>
+    </div>
+
+    <!-- Response Buttons -->
     <div id="reactionButtons">
       <p>How do you feel?</p>
-      <button onclick="respond('💕 I\'m interested')">💕 I'm interested</button>
-      <button onclick="respond('🕊️ I need time')">🕊️ I need time</button>
-      <button onclick="respond('🚫 I\'m not ready')">🚫 I'm not ready</button>
+      <button onclick="respond('💕 I\'m interested 💕', '💕 THANK YOUUU 💕 ')"> I'm interested</button>
+      <button onclick="respond(' I need time', ' IT\'S OKAY TAKE ALL THE TIME THAT YOU NEED')"> I need time</button>
+      <button onclick="respond(' I\'m not ready', ' IT\'OKAY, I UNDERSTAND THANK YOU AND TAKECARE ALWAYS')"> I'm not ready</button>
     </div>
   </div>
 
