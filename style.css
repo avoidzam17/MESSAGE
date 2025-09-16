@@ -31,18 +31,18 @@ body {
 }
 
 #intro h1 {
-  font-size: 3.6em;
+  font-size: 4em;
   color: #3399cc;
   margin-bottom: 10px;
 }
 
 #intro .emoji {
-  font-size: 2.8em;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
 #intro p {
-  font-size: 2.4em;
+  font-size: 2.6em;
   margin-bottom: 20px;
   padding: 0 10px;
   max-width: 90%;
@@ -50,8 +50,8 @@ body {
 
 #intro button {
   margin-top: 20px;
-  padding: 22px 26px;
-  font-size: 2.2em;
+  padding: 24px 28px;
+  font-size: 2.4em;
   border: none;
   border-radius: 12px;
   background-color: #3399cc;
@@ -80,70 +80,30 @@ body {
   padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-size: 2.2em;
-  line-height: 2.2;
+  font-size: 2.4em;
+  line-height: 2.4;
   text-align: left;
   word-break: break-word;
 }
 
-/* Optional Message Box */
-#optionalMessage {
-  margin-top: 30px;
-  text-align: center;
-}
-
-#optionalMessage p {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-#optionalMessage textarea {
-  font-size: 1.5em;
-  width: 90%;
-  max-width: 500px;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  resize: none;
-  margin-bottom: 10px;
-}
-
-/* Send Button */
-#optionalMessage button {
-  padding: 16px 22px;
-  font-size: 1.8em;
-  border: none;
-  border-radius: 10px;
-  background-color: #66bb6a;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 90%;
-  max-width: 300px;
-}
-
-#optionalMessage button:hover {
-  background-color: #57a85b;
-}
-
 /* Response Buttons */
 #reactionButtons {
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 #reactionButtons p {
-  font-size: 2em;
+  font-size: 2.4em;
   margin-bottom: 10px;
 }
 
 #reactionButtons button {
   margin: 10px auto;
-  padding: 22px 26px;
-  font-size: 2.2em;
+  padding: 24px 28px;
+  font-size: 2.4em;
   border: none;
   border-radius: 12px;
   background-color: #3399cc;
@@ -162,7 +122,7 @@ body {
 
 /* Final Response */
 #finalResponse {
-  font-size: 2em;
+  font-size: 2.2em;
   color: #444;
   padding: 20px;
   max-width: 95%;
